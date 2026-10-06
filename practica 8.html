@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coursera - Maquetación</title>
 
-  <!-- 
+  <!--
   Nombre Completo: Arellano Delgado Ismael
   Número de Control: 24308051280484
   Grado y Grupo: 5I
@@ -16,7 +16,7 @@
     body { color: #1f1f1f; background: #fff; }
 
     /* ENCABEZADO Y NAVEGACIÓN */
-    header { background: #fff; border-bottom: 1px solid #ddd; position: sticky; top: 0; }
+    header { background: #fff; border-bottom: 1px solid #ddd; position: sticky; top: 0; z-index: 100; }
     .top-bar { max-width: 1200px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
     .logo { font-size: 24px; font-weight: bold; color: #0056D2; text-decoration: none; }
     .search-box { flex: 1; max-width: 500px; display: flex; }
@@ -55,9 +55,10 @@
 
     /* FOOTER */
     footer { background: #000; color: #fff; padding: 30px 20px 15px; margin-top: 40px; }
-    .footer-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; border-bottom: 1px solid #333; padding-bottom: 20px; }
+    .footer-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; border-bottom: 1px solid #333; padding-bottom: 20px; }
     .footer-col ul { list-style: none; margin-top: 10px; }
     .footer-col a { color: #aaa; text-decoration: none; font-size: 14px; }
+    .footer-col.student-info p { font-size: 13px; color: #ccc; margin-top: 6px; }
     .footer-bottom { text-align: center; font-size: 12px; color: #777; margin-top: 15px; }
   </style>
 </head>
@@ -173,12 +174,12 @@
           <li><a href="#">Blog</a></li>
         </ul>
       </div>
-      <div class="footer-col">
-        <h4>Soporte</h4>
-        <ul>
-          <li><a href="#">Términos</a></li>
-          <li><a href="#">Privacidad</a></li>
-        </ul>
+      <!-- Sección con los datos solicitados -->
+      <div class="footer-col student-info">
+        <h4>Datos del Desarrollador</h4>
+        <p><strong>Nombre:</strong> Arellano Delgado Ismael</p>
+        <p><strong>No. de Control:</strong> 24308051280484</p>
+        <p><strong>Grado y Grupo:</strong> 5I</p>
       </div>
     </div>
     <div class="footer-bottom">
